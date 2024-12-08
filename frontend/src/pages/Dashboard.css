@@ -1,0 +1,146 @@
+/* General styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7fafc;
+  background-image: url("https://i.pinimg.com/1200x/ab/23/4b/ab234b79543421fbb54f6dca956b607b.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+/* Header styles */
+header {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem; /* Added space between navbar and container */
+  display: flex;
+  justify-content: center;  /* Center the header content */
+  position: relative;
+}
+
+/* Navbar styles */
+nav {
+  display: flex;
+  justify-content: center;  /* Center the navigation items */
+  width: 100%;
+}
+
+nav a {
+  font-weight: 600;
+  color: #4299e1; /* Blue color for the nav links */
+  text-decoration: none;
+  margin-left: 1.5rem;  /* Spacing between links */
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #2b6cb0; /* Darker blue on hover */
+}
+
+/* Space between the nav links */
+.space-x-6 > * + * {
+  margin-left: 1.5rem;
+}
+
+/* Main section */
+main {
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glassmorphism container (holding the 3 boxes) */
+.glass-container {
+  background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Apply blur effect to the background */
+  border-radius: 1rem; /* Optional rounded corners */
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 1200px;  /* Optional: Restrict max width */
+  display: flex;
+  justify-content: space-between; /* Distribute the boxes horizontally */
+  gap: 1.5rem;
+}
+
+/* Card styles for the 3 boxes (glassmorphism effect for each box) */
+.glass-box {
+  background-color: rgba(255, 255, 255, 0.3);  /* Semi-transparent white background */
+  backdrop-filter: blur(10px);  /* Apply blur effect to the background */
+  border-radius: 1rem;  /* Optional rounded corners */
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
+  width: 30%; /* Ensure three boxes in a row */
+  text-align: center;
+}
+
+.glass-box h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+.glass-box p {
+  color: #4a5568;
+  font-size: 1rem;
+}
+
+/* Text styling */
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+/* Card grid layout */
+.grid {
+  display: grid;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.md\:grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.lg\:grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+/* Navbar link hover effect */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for the image */
+.landing-image {
+  max-width: 100%;  /* Ensures the image does not stretch beyond the container */
+  height: auto;  /* Maintains aspect ratio */
+  display: block;  /* Removes any extra space below the image */
+  margin-top: 1rem; /* Adds some space above the image */
+  margin-left: auto; /* Centers the image horizontally */
+  margin-right: auto; /* Centers the image horizontally */
+}

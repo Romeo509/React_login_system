@@ -1,0 +1,81 @@
+/* landingPage.css */
+
+/* Set the body to take up the full screen with a background color */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.landing-container {
+  background-color: #f56565; /* Red background */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://i.pinimg.com/1200x/ab/23/4b/ab234b79543421fbb54f6dca956b607b.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  padding: 3rem 2rem; /* Added more padding for better spacing */
+  border-radius: 2rem; /* More pronounced rounded corners */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  max-width: 36rem;
+  width: 90%;
+  text-align: center;
+}
+
+.main-content p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 2rem; /* Space between text and buttons */
+}
+
+button {
+  background: linear-gradient(to right, #ff7f50, #ff4500); /* Fashion-inspired gradient (coral to red) */
+  color: white;
+  padding: 1rem 3rem; /* Large padding for bubble effect */
+  border-radius: 50px; /* Bubble-like rounded corners */
+  margin: 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: 2px solid transparent; /* Clean button border */
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(255, 69, 0, 0.4); /* Glowing effect */
+}
+
+button:hover {
+  background: linear-gradient(to right, #ff4500, #ff7f50); /* Reverse the gradient on hover */
+  transform: scale(1.1); /* Slightly enlarge the button */
+  box-shadow: 0px 8px 20px rgba(255, 69, 0, 0.6); /* Glowing effect on hover */
+}
+
+button.sign-up {
+  background: linear-gradient(to right, #48bb78, #38a169); /* Green gradient for sign-up button */
+  box-shadow: 0px 5px 15px rgba(72, 187, 120, 0.4); /* Glowing effect */
+}
+
+button.sign-up:hover {
+  background: linear-gradient(to right, #38a169, #48bb78); /* Reverse gradient on hover */
+  transform: scale(1.1); /* Slightly enlarge the button */
+  box-shadow: 0px 8px 20px rgba(72, 187, 120, 0.6); /* Glowing effect */
+}
+
+button:active {
+  transform: scale(0.98); /* Button shrinks a bit when clicked */
+}
+
+/* For better mobile responsiveness */
+@media (max-width: 600px) {
+  .main-content {
+    padding: 2rem 1rem;
+  }
+}

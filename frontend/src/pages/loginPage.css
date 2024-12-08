@@ -1,0 +1,99 @@
+/* loginPage.css */
+.login-container {
+  background-image: url('https://i.pinimg.com/1200x/ab/23/4b/ab234b79543421fbb54f6dca956b607b.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.login-box {
+  background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
+  border-radius: 18px; /* Slightly smaller border radius for a cuter look */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  width: 100%;
+  max-width: 380px; /* Reduced width for a smaller container */
+  z-index: 10;
+  backdrop-filter: blur(8px); /* Reduced blur effect for a softer look */
+}
+
+.login-title {
+  font-size: 2rem; /* Slightly smaller font size for the title */
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+.input-group {
+  margin-bottom: 16px; /* Reduced margin for a tighter layout */
+}
+
+.input-label {
+  font-size: 0.9rem; /* Slightly smaller label font size */
+  font-weight: 500;
+  color: #333;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.input-field {
+  width: 90%;
+  padding: 12px 16px; /* Reduced padding for a more compact input */
+  border: 2px solid #ccc;
+  border-radius: 10px; /* Slightly smaller border radius */
+  font-size: 0.95rem; /* Reduced font size */
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #1d4ed8;
+  box-shadow: 0px 0px 15px rgba(29, 78, 216, 0.4);
+}
+
+.login-button {
+  background: linear-gradient(45deg, #ff6ec7, #3a7bd5); /* Gradient background */
+  color: white;
+  width: 90%;
+  padding: 12px 0; /* Reduced padding for a cuter button */
+  font-size: 1.1rem; /* Slightly smaller font size */
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 8px 20px rgba(58, 123, 213, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  background: linear-gradient(45deg, #3a7bd5, #ff6ec7); /* Reverse gradient on hover */
+  transform: scale(1.05);
+  box-shadow: 0px 10px 25px rgba(58, 123, 213, 0.6);
+}
+
+.login-button:active {
+  transform: scale(0.98);
+}
+
+.signup-prompt {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 16px; /* Reduced margin */
+}
+
+.signup-link {
+  color: #1d4ed8;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.signup-link:hover {
+  color: #1e40af;
+}
